@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?&family=Karla:wght@400;700&display=swap');
+
+body {
+    background-color: hsl(204, 43%, 93%)
+}
+.container {
+    margin: 45px 20px 25px 20px;
+}
+.above {
+    background-color: #fff;
+    border-radius: 7px 7px 0 0;
+    padding: 7px 15px 15px 20px;
+}
+h3 {
+    font-family: karla;
+    color: hsl(204, 43%, 93%);
+    font-size: 23px;
+}
+.h3Color {
+   color: hsl(179, 60%, 38%);
+}
+h4 {
+    color: hsl(71, 38%, 50%);
+    font-family: karla;
+    padding-right: 25px;
+}
+p {
+    color: hsl(218, 22%, 67%);
+    font-family: karla;
+    line-height: 1.8em;
+}
+.left {
+    background-color: hsl(179, 62%, 43%);
+    padding: 7px 15px 15px 20px;
+    font-family: karla;
+}
+span {
+    vertical-align: middle;
+}
+.preco {
+    font-size: 35px;
+    color: #f4f7f6
+}
+.texto {
+    padding-left: 5px;
+    color: rgb(211, 211, 211);
+}
+.p2 {
+    color: #fff;
+}
+button {
+    width: 80%;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(71, 73%, 54%);
+    color: #fff;
+    font-size: 18px;
+    margin-left: 35px;
+    text-align: center;
+}
+button:hover {
+    background-color: aquamarine;
+}
+.right {
+    background-color: hsla(179, 62%, 43%, 0.63);
+    padding: 7px 15px 15px 20px;
+    font-family: karla;
+}
+.p3 {
+    color: #fff;
+    padding-right: 87px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight:lighter;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        width: 700px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .above {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .left {
+        border-radius: 0  0 0 7px;
+    }
+    .right {
+        border-radius: 0 0 7px 0 ;
+    }
+}
